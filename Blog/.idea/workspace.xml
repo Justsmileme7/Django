@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1ffbf11-3416-491a-a069-afb4f82af66f" name="Changes" comment="delite .idea">
-      <change afterPath="$PROJECT_DIR$/.idea/Blog.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SM1Lesson24/sitewithusers/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SM1Lesson24/templates/site.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cat_news/.idea/cat_news.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SM1Lesson24/.idea/SM1Lesson24.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../SM1Lesson24/.idea/SM1Lesson24.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SM1Lesson24/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SM1Lesson24/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SM1Lesson24/SM1Lesson24/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SM1Lesson24/SM1Lesson24/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SM1Lesson24/sitewithusers/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SM1Lesson24/sitewithusers/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +49,7 @@
     "Python.models.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "project-django",
     "last_opened_file_path": "/Users/evgenia/PycharmProjects/Django/Blog",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
