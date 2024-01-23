@@ -18,6 +18,6 @@ class Comment(models.Model):
     dislike = models.IntegerField()
     date_of_create_comment = models.DateTimeField()
     news_id = models.ForeignKey(News, on_delete=models.CASCADE)
-    comment_id = models.ForeignKey(Comment, on_delete=models.CASCADE)
+    comment_id = models.ForeignKey('Comment', on_delete=models.CASCADE)
 
 
