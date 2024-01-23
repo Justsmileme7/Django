@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 
 class News(models.Model):
@@ -11,6 +12,7 @@ class News(models.Model):
     date_of_create = models.DateTimeField()
     author = models.CharField(max_length=20)
 
+
 class Comment(models.Model):
     nickname = models.CharField(max_length=10)
     context_of_comment = models.TextField()
@@ -19,5 +21,3 @@ class Comment(models.Model):
     date_of_create_comment = models.DateTimeField()
     news_id = models.ForeignKey(News, on_delete=models.CASCADE)
     comment_id = models.ForeignKey('Comment', on_delete=models.CASCADE)
-
-
