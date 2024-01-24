@@ -5,6 +5,33 @@
     <title>Title</title>
 </head>
 <body>
+    <button>  Enter e-mail </button> <br>
+    <form action="/sing-up/" method="post">
+        {% csrf_token %}
+       <input name = 'e-mail' type="text">
+
+    </form>
+    <br>
+    <button>  Enter password </button> <br>
+     <form action="/sing-up/" method="post">
+        {% csrf_token %}
+        <input name = 'password' type="text">
+
+    </form>
+
+    <br>
+    <button>  Enter password one more time </button> <br>
+     <form action="/sing-up/" method="post">
+        {% csrf_token %}
+        <input name = 'repeatpassword' type="text">
+
+    </form>
+
+
+    <br>
+
+
+    <button onclick="window.location.href=/sing-in/"> Log in </button>
 
 </body>
 </html>
