@@ -4,7 +4,7 @@ from django.db import models
 from django.db import models
 
 
-class Users(models.Model):
+class ListUsers(models.Model):
     e_mail = models.EmailField(unique=True)
     password = models.CharField(max_length=50)
     user_date = models.DateTimeField

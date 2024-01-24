@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+</head>
+<body>
+    <p> Count of users: {{ count }}</p>
+    <button onclick="window.location.href='registrationpage'">  Registration</button> <br>
+    <br>
+    <button onclick="window.location.href='checkpage'"> Log in </button>
+
+    {% for user in users %}
+        <p> {{user}}</p>
+    {% endfor %}
+
+</body>
+</html>
