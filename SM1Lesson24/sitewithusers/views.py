@@ -1,3 +1,5 @@
+import datetime
+
 from django.shortcuts import render
 from django.views import View
 from sitewithusers.models import ListUsers
@@ -24,11 +26,14 @@ class RegistrationPageView(View):
         return render(request, 'registrationpage.html')
 
     def post (self, request, *args, **kwargs):
-        mail = request.POST['e-mail']
-        password = request.POST['password']
-        repeat_password = request.POST['repeatpassword']
+        mail = request.POST.get('e-mail')
+        password = request.POST.get('password')
+        repeat_password = request.POST.get('repeatpassword')
+        #now = datetime.datetime.now()
+        user = ListUsers(e_mail=mail, password=password)
+        user.save()
         print(mail, password, repeat_password)
-        return HttpResponse(request, 'registrationpage.html')
+        return render(request, 'registrationpage.html')
 
 
 class CheckPageView(View):
