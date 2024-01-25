@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <form method="post" action="/sing-up/">
+        {% csrf_token %}
+        <p>  Enter e-mail: </p> <br>
+       <input name = 'e-mail' type="text">
+
+        <p>  Enter password: </p> <br>
+
+        <input name = 'password' type="text">
+        <p>  Enter password one more time: </p> <br>
+
+        <input name = 'repeatpassword' type="text">
+        <button> Submit </button>
+
+    </form>
+
+    <br>
+    <br>
+    <button onclick="window.location.href=/sing-in/"> Log in </button>
+
+
+</body>
+</html>
