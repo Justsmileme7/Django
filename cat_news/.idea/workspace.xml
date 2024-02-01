@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="052573e2-eb70-4136-b0e1-2293049789ba" name="Changes" comment="create new project cat_news">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site_with_news/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/site_with_news/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site_with_news/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cat_news/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cat_news/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site_with_news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/site_with_news/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site_with_news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/site_with_news/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -84,6 +87,7 @@
       <updated>1706208052615</updated>
       <workItem from="1706208054792" duration="1070000" />
       <workItem from="1706796838446" duration="3413000" />
+      <workItem from="1706812733709" duration="1341000" />
     </task>
     <task id="LOCAL-00001" summary="create new project cat_news">
       <option name="closed" value="true" />

@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 
 class News(models.Model):
@@ -10,6 +11,7 @@ class News(models.Model):
     rating_popular = models.IntegerField(default=0)
     date_of_create = models.DateTimeField()
     author = models.CharField(max_length=20)
+
 
 class Comment(models.Model):
     nickname = models.CharField(max_length=10)
