@@ -37,5 +37,5 @@ class BrandAdmin(admin.ModelAdmin):
 
     def preview(self, instance: Brand):
         if instance.image_brand:
-            return mark_safe(f'<img style="max-width: 35px" src="{instance.image_brand.url}" alt="">')
+            return mark_safe(f'<img style="max-width: 75px" src="{instance.image_brand.url}" alt="">')
         return mark_safe('Without logo')
