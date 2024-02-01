@@ -4,6 +4,7 @@ from django.utils.safestring import mark_safe
 
 from .models import Auto, Automodel, Brand, UserCar
 
+
 # Register your models here.
 
 @admin.register(Auto)
@@ -22,17 +23,19 @@ class AutomodelAdmin(admin.ModelAdmin):
         count = Auto.objects.filter(automodel__name=instance.name).count()
         return count
 
+
 @admin.register(UserCar)
 class UserCarAdmin(admin.ModelAdmin):
     list_display = ('username', 'user_mail', 'user_phone_number')
     search_fields = ('user_phone_number',)
+    list_filter = ('user_phone_number',)
+
 
 @admin.register(Brand)
 class BrandAdmin(admin.ModelAdmin):
     list_display = ('preview', 'name')
 
     def preview(self, instance: Brand):
-        if instance.image_brand :
+        if instance.image_brand:
             return mark_safe(f'<img style="max_width=25px" scr="{instance.image_brand.url}" alt="">')
         return mark_safe('Without logo')
-
