@@ -12,6 +12,13 @@ class News(models.Model):
     date_of_create = models.DateTimeField()
     author = models.CharField(max_length=20)
 
+    def __str__(self):
+        return f'{self.title}'
+
+    class Meta:
+        verbose_name = 'News'
+        verbose_name_plural = 'News'
+
 
 class Comment(models.Model):
     nickname = models.CharField(max_length=10)

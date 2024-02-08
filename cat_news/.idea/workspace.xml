@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="052573e2-eb70-4136-b0e1-2293049789ba" name="Changes" comment="write title">
+    <list default="true" id="052573e2-eb70-4136-b0e1-2293049789ba" name="Changes" comment="Create admin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cat_news/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/cat_news/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site_with_news/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/site_with_news/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site_with_news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/site_with_news/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site_with_news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/site_with_news/views.py" afterDir="false" />
@@ -88,7 +87,7 @@
       <updated>1706208052615</updated>
       <workItem from="1706208054792" duration="1070000" />
       <workItem from="1706796838446" duration="3413000" />
-      <workItem from="1706812733709" duration="7977000" />
+      <workItem from="1706812733709" duration="11504000" />
     </task>
     <task id="LOCAL-00001" summary="create new project cat_news">
       <option name="closed" value="true" />
@@ -114,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706814781546</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Create admin">
+      <option name="closed" value="true" />
+      <created>1707411738013</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707411738013</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +131,7 @@
     <MESSAGE value="create new project cat_news" />
     <MESSAGE value="write urls" />
     <MESSAGE value="write title" />
-    <option name="LAST_COMMIT_MESSAGE" value="write title" />
+    <MESSAGE value="Create admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create admin" />
   </component>
 </project>
