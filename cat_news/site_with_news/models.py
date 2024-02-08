@@ -4,7 +4,7 @@ from django.db import models
 # Create your models here.
 
 class News(models.Model):
-    image = models.ImageField()
+    image = models.ImageField(null=True, blank=True, default=None)
     title = models.CharField(max_length=50, unique=True)
     context = models.TextField()
     rating = models.IntegerField(default=0)

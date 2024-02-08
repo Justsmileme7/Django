@@ -9,13 +9,17 @@ from site_with_news.models import News, Comment
 
 @admin.register(News)
 class NewsAdmin(admin.ModelAdmin):
-    list_display = ('title', 'image', 'context', 'rating')
+    list_display = ('preview', 'title', 'context', 'rating')
     search_fields = ('title', 'context')
     ordering = ('title', 'rating')
 
-
     def preview(self, instance: News):
-        if instance.picture:
-            return mark_safe(f'<img style="max-width: 30px" src="{instance.picture.url}" alt="">')
+        if instance.image:
+            return mark_safe(f'<img style="max-width: 200px" src="{instance.image.url}" alt="">')
         return mark_safe('Without picture')
 
+
+''' def preview(self, instance: Brand):
+        if instance.image_brand:
+            return mark_safe(f'<img style="max-width: 75px" src="{instance.image_brand.url}" alt="">')
+        return mark_safe('Without logo')'''

@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="052573e2-eb70-4136-b0e1-2293049789ba" name="Changes" comment="write urls" />
+    <list default="true" id="052573e2-eb70-4136-b0e1-2293049789ba" name="Changes" comment="write title">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cat_news/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/cat_news/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site_with_news/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/site_with_news/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site_with_news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/site_with_news/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site_with_news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/site_with_news/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +88,7 @@
       <updated>1706208052615</updated>
       <workItem from="1706208054792" duration="1070000" />
       <workItem from="1706796838446" duration="3413000" />
-      <workItem from="1706812733709" duration="1665000" />
+      <workItem from="1706812733709" duration="7977000" />
     </task>
     <task id="LOCAL-00001" summary="create new project cat_news">
       <option name="closed" value="true" />
@@ -100,7 +106,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706814452320</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="write title">
+      <option name="closed" value="true" />
+      <created>1706814781546</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706814781546</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +123,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create new project cat_news" />
     <MESSAGE value="write urls" />
-    <option name="LAST_COMMIT_MESSAGE" value="write urls" />
+    <MESSAGE value="write title" />
+    <option name="LAST_COMMIT_MESSAGE" value="write title" />
   </component>
 </project>
