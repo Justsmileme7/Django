@@ -6,16 +6,17 @@ from .models import News
 # Create your views here.
 class MainPageView(View):
     PAGE_TITLE = 'Cats news'
-    news = News.objects.all()
-    for new in news:
-        list_of_news = new.context.split(' ')[:10]
-        description = ' '.join(list_of_news)
-        new.context = description
-
-
 
     def get(self, request, *args, **kwargs):
-        return render(request, 'mainpage.html', context={"title": self.PAGE_TITLE})
+        news = News.objects.all()  # достаем все объекты из базы данных из таблицы news
+        for new in news:
+            list_of_news = new.context.split(' ')[:10]
+            description = ' '.join(list_of_news)
+            new.context = description
+        return render(request, 'mainpage.html',
+                      context={"title": self.PAGE_TITLE,
+                               'news_list': news,
+                               })
 
 
 ''' 
