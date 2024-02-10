@@ -9,7 +9,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 1px solid black;
+            border-bottom: none;
             padding: 10px;
         }
 
@@ -19,15 +19,16 @@
 
         .news-item {
             display: flex;
-            border: 1px solid black;
+            border: none;
             margin: 10px 0;
             padding: 10px;
         }
 
         .news-image {
-            width: 200px;
-            height: 150px;
-            margin-right: 10px;
+            width: 150px;
+            height: 240px;
+            margin-right: 40px;
+            margin-left: 20px;
         }
 
         .news-title {
@@ -36,24 +37,41 @@
         }
 
         .news-description {
-            font-size: 14px;
+            font-size: 18px;
         }
     </style>
 
+<form action="" method="get"> {# форма для передачи из нтмл файла во вью  #}
+<select id="sort" name="sort">
+    <option value="date_of_create" {% if request.GET.sort == 'date_of_create' %}selected{% endif %}>Date of create</option>
+    <option value="rating" {% if request.GET.sort == 'rating' %}selected{% endif %}>Rating</option>
+    <option value="rating_popular" {% if request.GET.sort == 'rating_popular' %}selected{% endif %}>Rating-popular</option>
 
+</select>
+<button> Submit </button>
+</form>
+    <br>
+    <form action="" method="get">
+<select id="order" name="order">
 
+    <option value="back_order" {% if request.GET.order == 'back_order' %}selected{% endif %}>Back order</option>
+    <option value="wright_order" {% if request.GET.order == 'wright_order' %}selected{% endif %}>Wright order</option>
+</select>
+<button> Submit </button>
+</form>
+<br>
 
 {% for new in news_list %}
     <div class="news-item">
-    <img style="max-width: 90px" src="/media/{{ new.image }}">
+    <img class="news-image" src="/media/{{ new.image }}">
+         <div>
     <h2 class = "news-title"> {{ new.title }}</h2>
-    <p> {{ new.context }}</p>
+    <p class = "news-description"> {{ new.context }}</p>
+    <a href="{% url "newspage" new.id %}">Read news</a>
 
-
+        </div>
     </div>
+    <hr>
     {% endfor %}
-
-
-
 
 {% endblock %}
