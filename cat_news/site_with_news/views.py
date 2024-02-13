@@ -34,19 +34,7 @@ class NewsPageView(View):
 
 
 ''' 
-DEFAULT_NEWS_PICTURE = 'media/default.jpg'
 
-    def get(self, request, *args, **kwargs):
-        sort_by = request.GET.get('sort', 'pub_date')
-        order_by = request.GET.get('order', 'desc')
-        sort_by = sort_by if order_by == 'asc' else f'-{sort_by}'
-        news = News.objects.order_by(sort_by)[:20]
-        for new in news:
-            desc_worlds_list = new.body.split(' ')[:10]
-            description = ' '.join(desc_worlds_list)
-            new.body = description
 
-        return render(request, 'index.html',
-                      context={'sort': sort_by, 'news_list': news, 'title': self.TITLE,
-                               'default_jpg': self.DEFAULT_NEWS_PICTURE})
+
 '''
